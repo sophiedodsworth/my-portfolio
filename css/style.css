@@ -1,3 +1,5 @@
+/* provided css */
+
 * {
   box-sizing: border-box;
 }
@@ -20,4 +22,51 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/* new css */
+
+header {
+  height: 120px;
+  background-color: darkslategrey;
+  font-family: monospace;
+}
+
+header h1 {
+  color: whitesmoke;
+  font-weight: 100;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+nav {
+  background-color: darkslategrey;
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+}
+
+nav a {
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: larger;
+  padding: 10px;
+}
+
+.banner-image {
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+}
+
+.banner-image h2 {
+  color: whitesmoke;
+  font-weight: 100;
+  background-color: grey;
+  padding: 10px;
+  margin: 10px;
 }

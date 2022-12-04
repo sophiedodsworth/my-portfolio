@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: monospace;
   line-height: 1.5;
 }
 
@@ -70,3 +70,68 @@ nav a {
   padding: 10px;
   margin: 10px;
 }
+
+.side-headings {
+  width: 20%;
+  background-color: grey;
+}
+
+#mainGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: 200px 400px 150px 150px 100px;
+  grid-template-areas: 
+  "about-me about-text about-text"
+  "projects main-project main-project"
+  "filler small-project1 small-project2"
+  "filler small-project3 small-project4"
+  "contact contact-links contact-links"
+  ;
+}
+
+#main-project {
+  grid-area: main-project;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#small-project1 {
+  grid-area: small-project1;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#small-project2 {
+  grid-area: small-project2;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#small-project3 {
+  grid-area: small-project3;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#small-project4 {
+  grid-area: small-project4;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#filler {
+  grid-area: filler;
+}
+
+#about-me {
+  grid-area: about-me;
+}
+
+#about-text {
+  grid-area: about-text;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#contact-links {
+  grid-area: contact-links;
+}
+

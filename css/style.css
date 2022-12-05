@@ -109,27 +109,28 @@ a {
 
 #main-project {
   grid-area: main-project;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/blue-pattern.jpg");
+  background-size: cover;
 }
 
 #small-project1 {
   grid-area: small-project1;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/blue-pattern.jpg");
 }
 
 #small-project2 {
   grid-area: small-project2;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/blue-pattern.jpg");
 }
 
 #small-project3 {
   grid-area: small-project3;
-  background-image: url("../images/02-portfolio-4.jpg");
+  background-image: url("../images/blue-pattern.jpg");
 }
 
 #small-project4 {
   grid-area: small-project4;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/blue-pattern.jpg");
   border-image: black 10px;
 }
 
@@ -162,40 +163,10 @@ a {
   margin-bottom: 10px;
 }
 
+#small-project1 h2,
+#small-project2 h2,
+#small-project3 h2, 
 #small-project4 h2 {
-  display: inline-block;
-  background-color: grey;
-  margin-top: 70px;
-  height: 70px;
-  width: 150px;
-  font-weight: 100;
-  text-align: center;
-  padding: 10px;
-}
-
-#small-project3 h2 {
-  display: inline-block;
-  background-color: grey;
-  margin-top: 70px;
-  height: 70px;
-  width: 150px;
-  font-weight: 100;
-  text-align: center;
-  padding: 10px;
-}
-
-#small-project2 h2 {
-  display: inline-block;
-  background-color: grey;
-  margin-top: 70px;
-  height: 70px;
-  width: 150px;
-  font-weight: 100;
-  text-align: center;
-  padding: 10px;
-}
-
-#small-project1 h2 {
   display: inline-block;
   background-color: grey;
   margin-top: 70px;
@@ -211,7 +182,7 @@ a {
   background-color: grey;
   margin-top: 315px;
   height: 70px;
-  width: 150px;
+  width: 350px;
   font-weight: 100;
   text-align: center;
   padding: 10px;

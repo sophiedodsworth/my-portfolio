@@ -12,7 +12,7 @@ body {
   line-height: 1.5;
   background-color: #d9dcd6;
 }
-h2,
+
 h3,
 h4,
 h5,
@@ -35,7 +35,6 @@ header {
 h1 {
   display: inline-block;
   background-color: grey;
-  margin-left: 10px;
   height: 60px;
   width: 375px;
   font-size: 35px;
@@ -99,12 +98,12 @@ a {
   display: grid;
   grid-template-columns: 20% 40% 40%;
   grid-template-rows: 200px 400px 150px 150px 100px;
-  grid-template-areas: 
-  "about-me about-text about-text"
-  "projects main-project main-project"
-  "filler small-project1 small-project2"
-  "filler small-project3 small-project4"
-  "contact contact-links contact-links"
+  grid-template-areas:
+    "about-me about-text about-text"
+    "projects main-project main-project"
+    "filler small-project1 small-project2"
+    "filler small-project3 small-project4"
+    "contact contact-links contact-links"
   ;
 }
 
@@ -131,6 +130,7 @@ a {
 #small-project4 {
   grid-area: small-project4;
   background-image: url("../images/02-portfolio-1.jpg");
+  border-image: black 10px;
 }
 
 #filler {
@@ -162,6 +162,57 @@ a {
   margin-bottom: 10px;
 }
 
-.main-content {
-  margin-bottom: 10px;
+#small-project4 h2 {
+  display: inline-block;
+  background-color: grey;
+  margin-top: 70px;
+  height: 70px;
+  width: 150px;
+  font-weight: 100;
+  text-align: center;
+  padding: 10px;
+}
+
+#small-project3 h2 {
+  display: inline-block;
+  background-color: grey;
+  margin-top: 70px;
+  height: 70px;
+  width: 150px;
+  font-weight: 100;
+  text-align: center;
+  padding: 10px;
+}
+
+#small-project2 h2 {
+  display: inline-block;
+  background-color: grey;
+  margin-top: 70px;
+  height: 70px;
+  width: 150px;
+  font-weight: 100;
+  text-align: center;
+  padding: 10px;
+}
+
+#small-project1 h2 {
+  display: inline-block;
+  background-color: grey;
+  margin-top: 70px;
+  height: 70px;
+  width: 150px;
+  font-weight: 100;
+  text-align: center;
+  padding: 10px;
+}
+
+#main-project h2 {
+  display: inline-block;
+  background-color: grey;
+  margin-top: 315px;
+  height: 70px;
+  width: 150px;
+  font-weight: 100;
+  text-align: center;
+  padding: 10px;
 }

@@ -69,8 +69,8 @@ a {
 }
 
 .banner-image {
-  background-image: url("../images/02-hero-bg.jpg");
-  background-size: cover;
+  background-image: url("../images/profile-photo.jpg");
+  background-size: contain;
   height: 300px;
   display: flex;
   align-items: flex-end;
@@ -111,27 +111,31 @@ a {
   grid-area: main-project;
   background-image: url("../images/blue-pattern.jpg");
   background-size: cover;
+  border: 5px solid whitesmoke
 }
 
 #small-project1 {
   grid-area: small-project1;
   background-image: url("../images/blue-pattern.jpg");
+  border: 5px solid whitesmoke
 }
 
 #small-project2 {
   grid-area: small-project2;
   background-image: url("../images/blue-pattern.jpg");
+  border: 5px solid whitesmoke
 }
 
 #small-project3 {
   grid-area: small-project3;
   background-image: url("../images/blue-pattern.jpg");
+  border: 5px solid whitesmoke
 }
 
 #small-project4 {
   grid-area: small-project4;
   background-image: url("../images/blue-pattern.jpg");
-  border-image: black 10px;
+  border: 5px solid whitesmoke
 }
 
 #filler {

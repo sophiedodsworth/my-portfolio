@@ -6,8 +6,8 @@
 
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
   font-family: monospace;
   line-height: 1.5;
   background-color: #d9dcd6;
@@ -86,11 +86,6 @@ a {
   margin: 10px;
 }
 
-.side-headings {
-  width: 20%;
-  background-color: grey;
-}
-
 #mainGrid {
   margin: 0px 5%;
   column-gap: 15px;
@@ -111,31 +106,31 @@ a {
   grid-area: main-project;
   background-image: url("../images/blue-pattern.jpg");
   background-size: cover;
-  border: 5px solid whitesmoke
+  border: 2px solid whitesmoke
 }
 
 #small-project1 {
   grid-area: small-project1;
   background-image: url("../images/blue-pattern.jpg");
-  border: 5px solid whitesmoke
+  border: 2px solid whitesmoke
 }
 
 #small-project2 {
   grid-area: small-project2;
   background-image: url("../images/blue-pattern.jpg");
-  border: 5px solid whitesmoke
+  border: 2px solid whitesmoke
 }
 
 #small-project3 {
   grid-area: small-project3;
   background-image: url("../images/blue-pattern.jpg");
-  border: 5px solid whitesmoke
+  border: 2px solid whitesmoke
 }
 
 #small-project4 {
   grid-area: small-project4;
   background-image: url("../images/blue-pattern.jpg");
-  border: 5px solid whitesmoke
+  border: 2px solid whitesmoke
 }
 
 #filler {
@@ -148,6 +143,7 @@ a {
 
 #about-text {
   grid-area: about-text;
+  display: flex;
 }
 
 #contact {
@@ -160,16 +156,17 @@ a {
 
 .content-headings {
   display: grid;
-  font-size: 50px;
   justify-content: right;
+  font-size: 30px;
   padding-right: 30px;
   border-right: 4px solid black;
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 #small-project1 h2,
 #small-project2 h2,
-#small-project3 h2, 
+#small-project3 h2,
 #small-project4 h2 {
   display: inline-block;
   background-color: grey;
@@ -190,4 +187,79 @@ a {
   font-weight: 100;
   text-align: center;
   padding: 10px;
+}
+
+#contact-links a {
+  color: darkslategrey;
+  font-size: 20px;
+  padding: 20px;
+  margin: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #header,
+  header nav {
+    margin-bottom: 20px;
+  }
+
+  .banner-image {
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: baseline;
+    margin-bottom: 30px;
+  }
+
+  .banner-image h2 {
+    color: whitesmoke;
+    font-weight: 100;
+    background-color: grey;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  #content-headings {
+    display: grid;
+    justify-content: center;
+    font-size: 30px;
+    border-right: 4px solid black;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  #filler {
+    display: none;
+  }
+
+  #contact-links {
+    justify-content: space-evenly;
+  }
+
+  #mainGrid {
+    margin: 0px 5%;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 250px 150px 400px 150px 150px 150px 150px 100px 300px;
+    grid-template-areas:
+      "about-me"
+      "about-text"
+      "projects"
+      "main-project"
+      "small-project1"
+      "small-project2"
+      "small-project3"
+      "small-project4"
+      "contact"
+      "contact-links"
+    ;
+  }
 }

@@ -92,7 +92,7 @@ a {
   row-gap: 20px;
   display: grid;
   grid-template-columns: 20% 40% 40%;
-  grid-template-rows: 200px 400px 150px 150px 100px;
+  grid-template-rows: 150px 400px 150px 150px 100px;
   grid-template-areas:
     "about-me about-text about-text"
     "projects main-project main-project"
@@ -144,6 +144,7 @@ a {
 #about-text {
   grid-area: about-text;
   display: flex;
+  align-items: center;
 }
 
 #contact {
@@ -171,10 +172,11 @@ a {
   display: inline-block;
   background-color: grey;
   margin-top: 70px;
-  height: 70px;
+  height: 50px;
   width: 150px;
   font-weight: 100;
   text-align: center;
+align-content: center;
   padding: 10px;
 }
 
@@ -182,8 +184,8 @@ a {
   display: inline-block;
   background-color: grey;
   margin-top: 315px;
-  height: 70px;
-  width: 350px;
+  height: 50px;
+  width: 280px;
   font-weight: 100;
   text-align: center;
   padding: 10px;
@@ -248,7 +250,7 @@ a {
     row-gap: 20px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px 250px 150px 400px 150px 150px 150px 150px 100px 300px;
+    grid-template-rows: 150px 170px 150px 400px 150px 150px 150px 150px 100px 300px;
     grid-template-areas:
       "about-me"
       "about-text"
